@@ -1,30 +1,35 @@
-import * as React from "react";
-import { Moon, Sun, Monitor } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
-
-const themes = ["light", "dark", "system"] as const;
-type Theme = (typeof themes)[number];
-
-const icons = {
-  light: <Sun className="h-[1.2rem] w-[1.2rem]" />,
-  dark: <Moon className="h-[1.2rem] w-[1.2rem]" />,
-  system: <Monitor className="h-[1.2rem] w-[1.2rem]" />,
-};
 
 export default function ModeToggle() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  const nextTheme = () => {
-    const currentIndex = themes.indexOf(theme as Theme);
-    const nextIndex = (currentIndex + 1) % themes.length;
-    setTheme(themes[nextIndex]);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  const style = "h-[1.2rem] w-[1.2rem]";
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <Button variant="outline" size="icon" onClick={nextTheme}>
-      {icons[theme as Theme] || <Monitor className="h-[1.2rem] w-[1.2rem]" />}
-      <span className="sr-only">Toggle theme</span>
-    </Button>
+    <div
+      className="w-9 h-9 flex items-center justify-center"
+      onClick={toggleTheme}
+    >
+      {theme === "dark" ? (
+        <Moon className={style} />
+      ) : (
+        <Sun className={style} />
+      )}
+    </div>
   );
 }
