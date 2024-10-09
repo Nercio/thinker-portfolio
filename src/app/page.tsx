@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="my-24 mb-28">
+    <main className="my-24 mb-28 max-md:px-5">
       <div className="max-w-screen-sm mx-auto space-y-12">
         <div className="flex flex-col space-y-5">
           <h1 className="text-4xl font-bold">Thinker</h1>
