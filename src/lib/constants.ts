@@ -64,13 +64,6 @@ export const projects = [
     image: "/kutukula.webp",
   },
   {
-    title: "Cartas Misticas",
-    link: "https://cartas-misticas.vercel.app",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sed molestiae delectus in, amet, minima numquam sequi aliquid qui esse dolor expedita optio.",
-    image: "/vit.webp",
-  },
-  {
     title: "Vitbhopal",
     link: "https://vitbhopal.vercel.app/",
     description:
