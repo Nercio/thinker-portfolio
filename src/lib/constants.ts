@@ -1,26 +1,3 @@
-export const nav: Navigation[] = [
-  {
-    id: "0",
-    title: "Features",
-    path: "#features",
-  },
-  {
-    id: "1",
-    title: "Pricing",
-    path: "/#pricing",
-  },
-  {
-    id: "2",
-    title: "Community",
-    path: "/#community",
-  },
-  {
-    id: "3",
-    title: "Support",
-    path: "/#support",
-  },
-];
-
 export const projects = [
   {
     title: "Shortsbot AI",
@@ -39,21 +16,21 @@ export const projects = [
   {
     title: "Serptag",
     link: "https://serptag.co.uk",
-    description: "Realtime serptracking.",
+    description: "Unleash the power of real-time SEO insights with Serptag!",
     image: "/serptag.webp",
   },
   {
     title: "Goscout.me",
     link: "https://goscoutme.vercel.app/",
     description:
-      "Platform to connecting scouts and athletes built with next.js, nest.js and supabase.",
+      "Your digital arena where athletes shine and scouts discover: Connecting sports talent with opportunity.",
     image: "/goscout.webp",
   },
   {
     title: "Empreender com Orgulo",
     link: "https://empreendercomorgulho.org",
     description:
-      "Platform to help people start their own businesses in Mozambique.",
+      "Empowering LGBTQIA+ youth in Mozambique through inclusive entrepreneurship and workplace diversity.",
     image: "/empreender.webp",
   },
   {
@@ -67,7 +44,7 @@ export const projects = [
     title: "Vitbhopal",
     link: "https://vitbhopal.vercel.app/",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sed molestiae delectus in, amet, minima numquam sequi aliquid qui esse dolor expedita optio.",
+      "Igniting data passion where curious minds meet cutting-edge science. Join VIT Bhopal's Data Science Club to learn innovate and shape the future of data.",
     image: "/vit.webp",
   },
 ];

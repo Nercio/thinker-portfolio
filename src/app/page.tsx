@@ -2,39 +2,35 @@
 
 import { Project } from "@/components/projects/project";
 import { projects } from "@/lib/constants";
+import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 
 export default function Home() {
+  const t = useTranslations("about");
+  const tFooter = useTranslations("footer");
+
   return (
     <main className="my-24 mb-28 max-md:px-5">
       <div className="max-w-screen-sm mx-auto space-y-12">
         <section className="flex flex-col space-y-5">
           <h1 className="text-4xl font-bold">Thinker</h1>
-          <p className="text-zinc-500 dark:text-zinc-400">
-            Thinker is a forward-thinking software company dedicated to crafting
-            innovative solutions that empower businesses and individuals to
-            achieve their goals. Our team of experts is passionate about
-            technology and committed to delivering excellence in every project.
-          </p>
+          <p className="text-zinc-500 dark:text-zinc-400">{t("title")}</p>
         </section>
         <section className="flex flex-col space-y-5">
-          <h2 className="text-xl font-semibold">Tech Stack</h2>
-          <p className="text-zinc-500 dark:text-zinc-400">
-            Next.js, React, Tailwind CSS, TypeScript, Sanity, Node.js, Prisma,
-            PostgreSQL, Supabase, Redis, Docker and more.
-          </p>
+          <h2 className="text-xl font-semibold">{t("techStackTitle")}</h2>
+          <p className="text-zinc-500 dark:text-zinc-400">{t("techStack")}</p>
         </section>
         <section className="flex flex-col space-y-5">
-          <h2 className="text-xl font-semibold">Projects</h2>
+          <h2 className="text-xl font-semibold">{t("projectsTitle")}</h2>
           {projects.map((project, index) => (
             <Project key={index} {...project} />
           ))}
         </section>
         <section className="p-6 bg-zinc-100 dark:bg-zinc-900 rounded-lg">
           <div className="flex flex-col space-y-5">
-            <h2 className="text-xl font-semibold">Link with us</h2>
+            <h2 className="text-xl font-semibold">{tFooter("link")}</h2>
             <p className="text-zinc-500 dark:text-zinc-400">
-              Our team members{" "}
+              {tFooter("members")}{" "}
               <Link
                 href="https://github.com/KelvinCelso"
                 target="_blank"
@@ -42,7 +38,7 @@ export default function Home() {
               >
                 Kelvin
               </Link>{" "}
-              and{" "}
+              {tFooter("and")}{" "}
               <Link
                 href="https://github.com/Nercio"
                 target="_blank"
@@ -50,7 +46,7 @@ export default function Home() {
               >
                 Nércio
               </Link>
-              . Star our open-source projects on{" "}
+              . {tFooter("star")}{" "}
               <Link
                 href="https://github.com/Thinker-Dev"
                 target="_blank"
@@ -58,7 +54,7 @@ export default function Home() {
               >
                 GitHub
               </Link>{" "}
-              or email us at{" "}
+              {tFooter("email")}{" "}
               <Link
                 href="mailto:support@thinker.dev"
                 target="_blank"

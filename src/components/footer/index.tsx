@@ -1,15 +1,29 @@
 "use client";
 
-import { Home, PhoneCall, Settings, User } from "lucide-react";
+import { Home, User } from "lucide-react";
 import AnimatedBackground from "../common/animated-background";
-import { useState } from "react";
-import ModeToggle from "../header/mode-toggle";
+import { useState, useTransition } from "react";
+import ModeToggle from "./mode-toggle";
+import { Locale } from "@/i18n/config";
+import { setUserLocale } from "@/services/locale";
 
 export function AnimatedTabs() {
-  const [language, setLanguage] = useState("EN");
+  const [language, setLanguage] = useState("en");
+  const [isPending, startTransition] = useTransition(); // Destructure correctly
+
+  const onChange = (value: string) => {
+    const locale = value as Locale;
+    startTransition(() => {
+      setUserLocale(locale);
+    });
+  };
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "EN" ? "PT" : "EN"));
+    setLanguage((prevLanguage) => {
+      const newLanguage = prevLanguage === "en" ? "pt" : "en";
+      onChange(newLanguage);
+      return newLanguage;
+    });
   };
 
   const TABS = [
@@ -17,10 +31,10 @@ export function AnimatedTabs() {
       label: "Home",
       icon: <Home className="h-5 w-5" />,
     },
-    {
-      label: "About",
-      icon: <User className="h-5 w-5" />,
-    },
+    // {
+    //   label: "About",
+    //   icon: <User className="h-5 w-5" />,
+    // },
     {
       label: "Language",
       icon: (
@@ -28,7 +42,7 @@ export function AnimatedTabs() {
           onClick={toggleLanguage}
           className="flex flex-col h-9 w-9 items-center justify-center"
         >
-          <span className="text-sm font-medium">{language}</span>
+          <span className="text-sm font-medium uppercase">{language}</span>
         </div>
       ),
     },

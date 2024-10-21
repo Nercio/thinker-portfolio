@@ -1,0 +1,14 @@
+{
+  "about": {
+    "title": "Thinker is a forward-thinking software company dedicated to crafting innovative solutions that empower businesses and individuals to achieve their goals. Our team of experts is passionate about technology and committed to delivering excellence in every project.",
+    "techStackTitle": "Our tech stack",
+    "techStack": "Next.js, React, Tailwind CSS, TypeScript, Sanity, Node.js, Prisma, PostgreSQL, Supabase, Redis, Docker and more.",
+    "projectsTitle": "Projects"
+  },
+  "footer": {
+    "members": "Our team members",
+    "and": "and",
+    "star": "Star our open-source projects on",
+    "email": "or email us at"
+  }
+}
