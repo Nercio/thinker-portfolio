@@ -2,7 +2,7 @@
   "about": {
     "title": "A Thinker é uma empresa de software inovadora dedicada a criar soluções inovadoras que capacitam empresas e indivíduos a alcançar seus objetivos. Nossa equipe de especialistas é apaixonada por tecnologia e comprometida em entregar excelência em cada projeto.",
     "techStackTitle": "Tecnologias",
-    "techStack": "Next.js, React, Tailwind CSS, TypeScript, Sanity, Node.js, Prisma, PostgreSQL, Supabase, Redis, Docker e mais.",
+    "techStack": "React, React Native, Next, Tailwind CSS, TypeScript, Sanity, Node, Express, Nest, Prisma, PostgreSQL, MongoDB, Firebase, Supabase e mais.",
     "projectsTitle": "Projetos"
   },
   "footer": {
