@@ -3,8 +3,22 @@ export const projects = [
     title: "Shortsbot AI",
     link: "https://shortsbot.ai",
     description:
-      "Faceless videos generator on autopilot built with nextjs and vercel ai sdk.",
+      "AI-driven platform designed to automate faceless video content creation for YouTube and TikTok channels.",
     image: "/shortsbot.webp",
+  },
+  {
+    title: "Serptag",
+    link: "https://serptag.co.uk",
+    description:
+      "Website built for SERP tracking, enabling real-time monitoring of keyword rankings across various search engines, regions, and devices.",
+    image: "/serptag.webp",
+  },
+  {
+    title: "Avatax",
+    link: "https://avatarx.live/",
+    description:
+      "AvatarX is an AI-driven platform for immersive chatbot experiences, allowing users to interact with AI-generated avatars in a personalized, privacy-focused setting.",
+    image: "/avatarx.webp",
   },
   {
     title: "Instabuilds",
@@ -13,12 +27,7 @@ export const projects = [
       "Single interface to manage your construction projects built with next.js, nest.js and supabase.",
     image: "/instabuilds.webp",
   },
-  {
-    title: "Serptag",
-    link: "https://serptag.co.uk",
-    description: "Unleash the power of real-time SEO insights with Serptag!",
-    image: "/serptag.webp",
-  },
+
   {
     title: "Goscout.me",
     link: "https://goscoutme.vercel.app/",
