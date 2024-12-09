@@ -1,14 +1,16 @@
 import { Cursor } from "@/components/projects/cursor";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 interface Props {
   title: string;
-  description: string;
+  descriptionKey: string;
   image: string;
   link: string;
 }
 
-export function Project({ title, description, image, link }: Props) {
+export function Project({ title, descriptionKey, image, link }: Props) {
+  const t = useTranslations();
   return (
     <div className="group">
       <Link href={link} target="_blank">
@@ -32,7 +34,7 @@ export function Project({ title, description, image, link }: Props) {
           <img src={image} alt={title} className="h-52 w-full" />
         </Cursor>
         <h3>{title}</h3>
-        <p className="text-zinc-500 dark:text-zinc-400">{description}</p>
+        <p className="text-zinc-500 dark:text-zinc-400">{t(descriptionKey)}</p>
       </Link>
     </div>
   );

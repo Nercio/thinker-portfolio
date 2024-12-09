@@ -10,5 +10,16 @@
     "and": "e",
     "star": "Avalie os nossos projectos de código aberto no",
     "email": "ou envie um email para"
+  },
+  "projects": {
+    "shortsbotAI": "Plataforma impulsionada por IA projetada para automatizar a criação de conteúdo de vídeo sem rosto para canais do YouTube e TikTok.",
+    "serptag": "Site criado para rastreamento SERP, permitindo o monitoramento em tempo real das classificações de palavras-chave em vários mecanismos de busca, regiões e dispositivos.",
+    "avatax": "AvatarX é uma plataforma impulsionada por IA para experiências de chatbot imersivas, permitindo que os usuários interajam com avatares gerados por IA em um ambiente personalizado e focado na privacidade.",
+    "instabuilds": "Plataforma de criação de sites, projetada para simplificar a integração de serviços e ferramentas essenciais em aplicações modernas.",
+    "goscout": "Sua arena digital onde atletas brilham e olheiros descobrem: Conectando talentos esportivos com oportunidades.",
+    "empreender": "Capacitando jovens LGBTQIA+ em Moçambique através do empreendedorismo inclusivo e diversidade no local de trabalho.",
+    "kutukula": "Organização com o objetivo final de ajudar a melhorar os meios de subsistência das famílias rurais moçambicanas.",
+    "vitbhopal": "Acendendo a paixão por dados onde mentes curiosas encontram ciência de ponta. Junte-se ao Clube de Ciência de Dados do VIT Bhopal para aprender, inovar e moldar o futuro dos dados.",
+    "layers": "Layers é um modelo inicial para construir sites modernos com Next.js, Tailwind CSS e TypeScript."
   }
 }

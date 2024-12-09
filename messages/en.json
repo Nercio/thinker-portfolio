@@ -10,5 +10,16 @@
     "and": "and",
     "star": "Star our open-source projects on",
     "email": "or email us at"
+  },
+  "projects": {
+    "shortsbotAI": "AI-driven platform designed to automate faceless video content creation for YouTube and TikTok channels.",
+    "serptag": "Website built for SERP tracking, enabling real-time monitoring of keyword rankings across various search engines, regions, and devices.",
+    "avatax": "AvatarX is an AI-driven platform for immersive chatbot experiences, allowing users to interact with AI-generated avatars in a personalized, privacy-focused setting.",
+    "instabuilds": "Platform for building websites, designed to simplify the integration of essential services and tools in modern applications.",
+    "goscout": "Your digital arena where athletes shine and scouts discover: Connecting sports talent with opportunity.",
+    "empreender": "Empowering LGBTQIA+ youth in Mozambique through inclusive entrepreneurship and workplace diversity.",
+    "kutukula": "Organization with the ultimate goal of helping improve the livelihoods of rural Mozambican households.",
+    "vitbhopal": "Igniting data passion where curious minds meet cutting-edge science. Join VIT Bhopal's Data Science Club to learn innovate and shape the future of data.",
+    "layers": "Layers is a starter template for building modern websites with Next.js, Tailwind CSS, and TypeScript."
   }
 }
